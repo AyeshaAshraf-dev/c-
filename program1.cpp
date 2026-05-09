@@ -1,6 +1,9 @@
 #include<iostream>
 #include<string>
 
+using namespace std;
+
+
 //main program
 int main() {
 //Declaring the variables
