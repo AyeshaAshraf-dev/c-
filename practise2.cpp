@@ -196,7 +196,11 @@ int main() {
     cout<<result;
     return 0;
 
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae
 Print the table of user given number from 1 upto user given limit. Like if user enters 3, and limit
 is 4, program should print table of 3 as follows:
 
@@ -204,7 +208,11 @@ is 4, program should print table of 3 as follows:
 3 * 2 = 06
 3 * 3 = 09
 3 * 4 = 12
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae
 #include<iostream>
 
 using namespace std;

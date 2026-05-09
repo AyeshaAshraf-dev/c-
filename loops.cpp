@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*multiplication table
+=======
+/*multiplication table*/
+>>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae
 
 #include<iostream>
 
@@ -21,6 +25,7 @@ int main() {
 
 
 
+<<<<<<< HEAD
 #include<iostream>
 using namespace std;
 int sum(int num1,int num2) {
@@ -62,3 +67,5 @@ int main(){
     return 0;
 }
 
+=======
+>>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae

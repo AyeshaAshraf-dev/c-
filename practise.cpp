@@ -37,6 +37,19 @@ int main() {
 }
 
 */
+#include<iostream>
+
+using namespace std;
+
+int main(num1,num2) {
+
+    summ = num1+num2;
+    cout<<"The sum of both numbers is: "<<summ<<end1;
+
+}
+
+main(222,44)
+
 
 
 
