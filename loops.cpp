@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/*multiplication table
-=======
-/*multiplication table*/
->>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae
 
 #include<iostream>
 
@@ -25,14 +20,13 @@ int main() {
 
 
 
-<<<<<<< HEAD
 #include<iostream>
 using namespace std;
 int sum(int num1,int num2) {
     return num1+num2;
 
 }
-int main() {
+int main1() {
     int x = 23;
     int y = 34;
     int resultt = sum(x,y);
@@ -41,7 +35,7 @@ int main() {
    return 0;
 }
 
-*/
+
 
 
 //2. Write a function to check whether a number is even or odd.
@@ -60,12 +54,87 @@ int evenoddnum(int num) {
     return 0;
 }
 
-int main(){
+int main2(){
     int x = 33;
     int result = evenoddnum(x);
     cout<<result;
     return 0;
 }
 
-=======
->>>>>>> fd2b0537182e49a32f5b5165e43405f9aa1848ae
+
+//Write a function to find the maximum of three numbers.
+
+
+//Write a function to calculate the factorial of a number using function.
+
+
+
+
+#include<iostream>
+
+using namespace std;
+
+int getfact(int n) {
+    long long fact = 1;
+    for(int i=1;i<=n;++i) {
+        fact = fact*i;
+    }
+    return fact;
+}
+
+
+int main3() {
+    int n;
+    cout<<"Enter the number u want to get factorial of :"<<endl;
+    cin>>n;
+    long long result3 = getfact(n);
+    cout<<"The factorial is: "<<result3<<endl;
+}
+
+
+//. Write a function to print the multiplication table of a given number.
+
+#include<iostream>
+
+using namespace std;
+
+void mulnum(int n){
+    int i;
+    for( i=1 ; i<=n ; i++ ){
+        cout<<n<<"*"<<i<<"="<<i*n<<endl;
+    }
+
+}
+
+int main4(){
+    int x;
+    cout<<"Enter the Number u want to get table of: "<<endl;
+    cin>>x;
+    cout<<"The table is: "<<endl<< x <<endl;
+    mulnum(x);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
