@@ -165,7 +165,7 @@ int main() {
     cout<<"The factorial is: "<<result3<<endl;
 }
 
-*/
+
 
 //. Write a function to print the multiplication table of a given number.
 
@@ -192,12 +192,173 @@ int main(){
 }
 
 
+//Write a function to check whether a number is prime.
+
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int isprime(int n) {
+    if (n<=1) {
+        return 0;
+    }
+    for(int i=2;i<=std::sqrt(n);++i) {
+    if(n%i==0) {
+    return 0;
+    }
+    return true;
+ }
+}
+
+int main(){
+    int num;
+    cout<<"Enter a number"<<endl;
+    cin>>num;
+    if(isprime(num)) {
+    cout<<num<<" is prime number."<<endl;
+    }
+    else {
+    cout<<"not a prime number sorry!!";
+    }
+    return 0;
+
+}
+
+//Write a function to calculate power (x ^ y) using loops.
+#include<iostream>
+using namespace std;
+
+long long calpower(int x, int y){
+    int result = 1;
+    for(int i=1;i<=y;i++) {
+    result = result*x;
+
+    }
+    return result;
+}
+
+int main(){
+    int num1,num2;
+    cout<<"Enter x: "<<endl;
+    cin>>num1;
+    cout<<"Enter y: "<<endl;
+    cin>>num2;
+    if(num1==0) {
+    cout<<"The result : 0";
+    }
+    else if(num2==0) {
+    cout<<"The result : 1";
+    }
+    else  {
+    cout<<"THE RESULT: "<<calpower(num1,num2)<<endl;
+    }
+    return 0;
+
+}
+
+
+
+
+//8. Write a function to reverse a number.
+
+
+
+#include<iostream>
+
+using namespace std;
+
+
+int reversenum(int n) {
+    int reminder, revnum = 0;
+    while(n>0) {
+    reminder = n%10;
+    n = n/10;
+    revnum = (revnum*10) + reminder;
+    }
+    return revnum;
+
+}
+
+
+
+int main(){
+    int x;
+    cout<<"Enter a num: "<<endl;
+    cin>>x;
+    int result = reversenum(x);
+    cout<<"The reverse number is: "<<result<<endl;
+    return 0;
+
+}
 
 
 
 
 
+//Write a function to check whether a number is palindrome.
 
+#include<iostream>
+
+using namespace std;
+
+
+bool reversenum(int n) {
+    int orignalnum = n;
+    int reminder, revnum = 0;
+    while(n>0) {
+    reminder = n%10;
+    n = n/10;
+    revnum = (revnum*10) + reminder;
+    }
+    return (revnum==orignalnum);
+
+}
+
+
+
+int main(){
+    int x;
+    cout<<"Enter a num: "<<endl;
+    cin>>x;
+    if (reversenum(x)) {
+    cout<<"It is a paindrome!"<<endl;
+    }
+    else {
+    cout<<"It is not a palindrome!"<<endl;
+    }
+    return 0;
+
+}
+
+*/
+
+//10.Write a function to find sum of digits of a number.
+
+#include<iostream>
+
+using namespace std;
+
+
+int sumfun(int n) {
+    int sum = 0;
+    
+    while(n>0) {
+    int lastdigit = n%10;
+    sum = sum + lastdigit;
+    n = n/10;
+    }
+    return sum;
+
+}
+int main() {
+    int a;
+    cout<<"Enter the number! "<<endl;
+    cin>>a;
+    cout<<"THe Sum IS: "<<sumfun(a)<<endl;
+    return 0;
+
+}
 
 
 
