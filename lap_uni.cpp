@@ -331,7 +331,7 @@ int main(){
 
 }
 
-*/
+
 
 //10.Write a function to find sum of digits of a number.
 
@@ -349,7 +349,7 @@ int sumfun(int n) {
     n = n/10;
     }
     return sum;
-//s 
+//s
 }
 int main() {
     int a;
@@ -359,6 +359,198 @@ int main() {
     return 0;
 
 }
+
+/11.Write a function to swap two numbers.
+
+#include<iostream>
+
+using namespace std;
+
+
+void swapnum(int &a,int &b) {
+    int Temp = a;
+    a=b;
+    b=Temp;
+}
+
+int main() {
+    int x ,y;
+    cout<<"Enter the value of number1 and number2 : "<<endl;
+    cin>>x>>y;
+    swapnum(x,y);
+    cout<<"The output is: number1: "<< x <<" Number2: "<< y <<endl;
+    return 0;
+}
+
+// 12.Write a function to print table of user given number up to user-given limit.
+
+
+#include<iostream>
+
+using namespace std;
+
+void anotherfunc(int a, int b) {
+    int i;
+    int minn = a;
+    int maxx = b;
+    for(i = minn;i<=maxx;i++) {
+        cout<<i<<endl;
+        }
+    cout<< endl;
+
+}
+
+int main() {
+    int x,y;
+    cout<<"Enter minimum and maximum number: "<<endl;
+    cin>>x>>y;
+    cout<<"Result: "<<endl;
+    anotherfunc(x,y);
+    return 0;
+}
+
+// 13.Calculate sum of even and off numbers separately from a user given range by using for
+//loop. Like if user gives lower_limit of 50 and higher_limit of 80. Calculate sum of all odds
+//and evens in between 50 and 80 and display on screen.
+
+
+#include<iostream>
+
+using namespace std;
+
+void anotherfunc(int a, int b) {
+    int i;
+    int evensum = 0;
+    int oddsum = 0;
+    int minn = a;
+    int maxx = b;
+    for(i = minn;i<=maxx;i++) {
+        if(i % 2 ==0){
+         evensum += i;
+        }
+        else {
+          oddsum += i;
+         }
+        }
+    cout<<"The sum of Even Number: "<<evensum<<endl;
+    cout<<"The sum of Odd Number: "<<oddsum<<endl;
+
+
+}
+
+int main() {
+    int x,y;
+    cout<<"Enter minimum and maximum number: "<<endl;
+    cin>>x>>y;
+    cout<<"Result: "<<endl;
+    anotherfunc(x,y);
+    return 0;
+}
+
+
+//14.Input the marks of a class of ten students. The marks must be between 0 to 100. Also
+check marks should not be less than 0 or greater than 100. Calculate the grades of every
+student and display it by using for loop. Also calculate the total of the grades and the
+class average.
+• >90 = A
+• <90 and >80 = B
+• <80 and >70 = C
+• < 70 and > 60 = D
+
+#include<iostream>
+using namespace std;
+
+void calculateClassGrades() {
+    int totalStudents = 10;
+    double totalMarksSum = 0.0; // To calculate the average later
+
+    for(int i = 1; i <= totalStudents; i++) {
+        int marks;
+
+        // 1. Input with Validation Check
+        cout << "Enter marks for Student " << i << " (0-100): ";
+        cin >> marks;
+
+        // While the input is invalid, force them to re-enter
+        while(marks < 0 || marks > 100) {
+            cout << "Invalid marks! Please enter a value between 0 and 100: ";
+            cin >> marks;
+        }
+
+        // Add valid marks to our running total sum
+        totalMarksSum += marks;
+
+        // 2. Determine and Display the Grade
+        char grade;
+        if(marks >= 90) {
+            grade = 'A';
+        }
+        else if(marks >= 80) { // Covers 80 to 89
+            grade = 'B';
+        }
+        else if(marks >= 70) { // Covers 70 to 79
+            grade = 'C';
+        }
+        else if(marks >= 60) { // Covers 60 to 69
+            grade = 'D';
+        }
+        else {
+            grade = 'F'; // Below 60 is a Fail grade
+        }
+
+        cout << "Student " << i << " Grade: " << grade << "\n" << endl;
+    }
+
+    // 3. Calculate and Display Average
+    double classAverage = totalMarksSum / totalStudents;
+
+    cout << "---------------------------------------" << endl;
+    cout << "Total Marks of the Class: " << totalMarksSum << endl;
+    cout << "Class Average: " << classAverage << "%" << endl;
+}
+
+int main() {
+    // Just call the function in main
+    calculateClassGrades();
+
+    return 0;
+}
+
+
+
+
+15.Input a number from user and display a pattern like these on screen by using for loop.
+For example, user has entered 5, the program should display following pattern on
+screen.
+* * * * *
+* * * *
+* * *
+*/
+
+#include<iostream>
+
+using namespace std;
+
+void pattern(){
+    for(int i=1;i<=5;i++) {
+        for(int j=1;j<=5;j++) {
+        cout<<"*";
+        }
+        cout<<endl;
+    }
+
+
+}
+
+int main(){
+
+    pattern();
+    return 0;
+}
+
+
+
+
 
 
 
